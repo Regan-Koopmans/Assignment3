@@ -1,0 +1,98 @@
+body
+{
+    background : #012000;
+}
+h1
+{
+    color : #3A943A;
+    font-family: monospace;
+    /*text-shadow: 0.5px 0.5px 5px #3A943A;*/
+    
+}
+
+h2
+{
+    color : #3A943A;
+    font-family: monospace;
+    
+}
+
+.cursor
+{
+    color : black;
+    animation : blink 0.6s infinite alternate;
+}
+
+hr
+{
+    color : #3A943A;
+    border : 1px solid #3A943A;
+    /*box-shadow: 1px 1px 2px #77E600;*/
+}
+
+fieldset
+{
+    padding : 20px;
+    border-color : #012000;
+    box-shadow: 0.5px 0.5px 10px #77ER600;
+    
+}
+
+legend
+{
+    font-family: monospace;
+    color : #3A943A;
+    font-size : 20px;
+
+}
+
+label
+{
+    display : inline-block;
+    float : left;
+    clear : left;
+    width : 100px;
+    text-align: right;
+    color : #3A943A;
+    font-family: monospace;
+    font-size: 15px;
+    
+}
+
+.login
+{
+    display:inline-block;
+    float:left;
+    background-color: black;
+    color : #3A943A;
+    height : 20px;
+    border : 1px solid #012000;
+    text-shadow: 0.5px 0.5px 10px #3A943A;
+}
+
+.login:focus
+{
+    background-color: #3A943A;
+    color : black;
+}
+
+
+#submitButton
+{
+    float : left;
+    display : inline-block;
+}
+
+@keyframes blink
+{
+    from
+    {
+        color: #012000;
+        /*text-shadow: 0px 0px #012000; */
+    }
+    to
+    {
+        color: #3A943A;
+        /*text-shadow: 1px 1px 5px #3A943A;*/
+    }
+}
