@@ -3,9 +3,9 @@
   <head>
     <title>Log into Pong : Player 1</title>
     <link rel="stylesheet" type="text/css" href="pong.css" />
+    <script src="pong.js"></script>
   </head>
-  <body>
-    <div class="frame"> 
+  <body> 
       <h1>
        > Log Into Pong<span class="cursor">|</span>
       </h1>
@@ -13,19 +13,19 @@
       <hr/>
       <br/>
       <div id="loginFormContainer">
-        <form id="loginForm" action="" method="post"> 
+        <form id="loginForm" action="playerTwo.html" method="post"> 
           <fieldset>
-            <legend>//Player1 Information</legend>         
+            <legend>//Player 1 Information</legend>         
           
-            <label> ID : </label>       <input class="login" type="text" name="playerID" autofocus> <br>
-            <label> Name : </label>     <input class="login" type="text" name="firstname"> <br>
-            <label> Surname : </label>  <input class="login" type="text" name="surname"> <br>
-            <label> Email : </label>    <input class="login" type="email" name="emailAddress"> <br>
-            <label> Password : </label> <input class="login" type="password" name="playerPassword"> <br>
+            <label> ID : </label>       <input class="login" type="text" name="playerID" autofocus required> <br>
+            <label> Name : </label>     <input class="login" type="text" name="firstname" required> <br>
+            <label> Surname : </label>  <input class="login" type="text" name="surname" required> <br>
+            <label> Email : </label>    <input class="login" type="email" name="emailAddress" required> <br>
+            <label> Password : </label> <input class="login" type="password" name="playerPassword" required> <br>
             <br><br>
             
-            <input id="submitButton" type="submit" value="Validate">
-        
+            <input onclick='saveToFile("player1.xml")' id="submitButton" type="submit" value="Validate">
+            
           </fieldset>
         </form>
       </div>
@@ -33,9 +33,9 @@
       <hr/>
       <br/>     
     
-    <div class="output">
+    <div id="output">
         
     </div>
-    </div>
-  </body>
+    </body>
+  <script src="pong.js"></script>
 </html>

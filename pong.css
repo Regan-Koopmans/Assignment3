@@ -34,7 +34,6 @@ fieldset
 {
     padding : 20px;
     border-color : #012000;
-    box-shadow: 0.5px 0.5px 10px #77ER600;
     
 }
 
@@ -67,7 +66,6 @@ label
     color : #3A943A;
     height : 20px;
     border : 1px solid #012000;
-    text-shadow: 0.5px 0.5px 10px #3A943A;
 }
 
 .login:focus
@@ -76,11 +74,80 @@ label
     color : black;
 }
 
+#output
+{
+    color : #3A943A;
+    margin: auto;
+}
 
 #submitButton
 {
     float : left;
     display : inline-block;
+    background: linear-gradient( to right,red 0%,
+                                        orange 15%,
+                                        yellow 30%,
+                                        lime 45%,
+                                        blue 60%,
+                                        purple 85%,
+                                        red 100%);
+    
+    color: white;
+    
+    
+}
+
+.paddle
+{
+    background-color: #3A943A;
+    width : 5%;
+    height : 10%;
+    position: absolute;
+}
+
+.ball
+{
+    
+}
+
+#board
+{
+    width : 400px;
+    height : 400px;
+}
+
+
+
+.button
+{
+    font-family: monospace;
+    background-color: #3A943A;
+    
+}
+
+.score
+{
+    color : #3A943A;
+    font-size : 20px;
+    font-family: monospace;
+    
+}
+
+#gameWrapper
+{
+    margin-left:auto;
+    margin-right: auto;
+
+}
+
+line
+{
+    stroke:white;
+}
+
+rect
+{
+    fill:#3A943A;
 }
 
 @keyframes blink

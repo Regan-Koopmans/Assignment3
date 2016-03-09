@@ -1,8 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Log into Pong : Player 2</title>
+    <link rel="stylesheet" type="text/css" href="pong.css" />
+    <script src="pong.js"></script>
   </head>
-  <body>
+  <body> 
+      <h1>
+       > Log Into Pong<span class="cursor">|</span>
+      </h1>
+      <br/>
+      <hr/>
+      <br/>
+      <div id="loginFormContainer">
+        <form id="loginForm" action="Pong.html" method="post"> 
+          <fieldset>
+            <legend>//Player 2 Information</legend>         
+          
+            <label> ID : </label>       <input class="login" type="text" name="playerID" autofocus required> <br>
+            <label> Name : </label>     <input class="login" type="text" name="firstname" required> <br>
+            <label> Surname : </label>  <input class="login" type="text" name="surname" required> <br>
+            <label> Email : </label>    <input class="login" type="email" name="emailAddress" required> <br>
+            <label> Password : </label> <input class="login" type="password" name="playerPassword" required> <br>
+            <br><br>
+            
+            <input onclick='saveToFile("player2.xml")' id="submitButton" type="submit" value="Validate">
+            
+          </fieldset>
+        </form>
+      </div>
+      <br/>
+      <hr/>
+      <br/>     
     
-  </body>
+    <div id="output">
+        
+    </div>
+    </body>
+  <script src="pong.js"></script>
 </html>

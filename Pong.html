@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>COS216 Pong Game</title>
+		<meta charset="utf-8" />
+		<link href="pong.css" rel="stylesheet" type="text/css" />
+		<script src="pong.js" type="text/javascript"></script>
+	</head>
+	<body>
+		
+		<h1>> PONG<span class="cursor">|</span></h1>
+		
+		<div class=button>
+			<button id="playbtn" onclick="play()"autofocus>Start</button>
+		</div>
+		
+		<div class=button>
+			<button>Go to leaderboards</button>
+		</div>
+		
+		<!--<div id=board>
+			<div class=score>0</div>
+			<div class=score>0</div>
+            <div id=ball data-angle=0 ></div>
+            <div id=line></div>
+			<div class=paddle></div>
+			<div class=paddle></div>
+		</div> -->
+		
+		<br>
+		<div id="gameWrapper" align="center">
+		<svg width="400px" height="300px">
+			<text x="0" fill="black">Hello ^_^</text>
+			<text></text>
+			<rect width="10px" height="50px" x="0" y="0"/>
+			<rect width="10px" height="50px" x="490px" y="0"/>
+			<line x1="200" y1="0" x2="200" y2="300" />
+		</svg>
+		</div>
+	</body>
+</html>
