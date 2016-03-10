@@ -80,6 +80,23 @@ label
     margin: auto;
 }
 
+#playbtn, #leaderbtn
+{
+    background-color: #012000;
+    color: #3A943A;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#playbtn:hover, #leaderbtn:hover
+{
+    background-color: #3A943A;
+    color: #012000 ;
+    border: none;
+    font-weight: bold;
+}
+
 #submitButton
 {
     float : left;
@@ -112,16 +129,20 @@ label
 
 #board
 {
-    width : 400px;
-    height : 400px;
+    background-color: #012000;
 }
 
 
+pre
+{
+    color: #3A943A;
+}
 
 .button
 {
     font-family: monospace;
-    background-color: #3A943A;
+    /*background-color: #3A943A;*/
+    color: #3A943A;
     
 }
 
@@ -137,12 +158,13 @@ label
 {
     margin-left:auto;
     margin-right: auto;
-
+    background-color : black;
+    padding: 20px;
 }
 
 line
 {
-    stroke:white;
+    stroke:#3A943A;
 }
 
 rect

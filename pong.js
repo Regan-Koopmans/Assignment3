@@ -5,6 +5,9 @@
 
 var player1_x = 0;
 var player2_x = 0;
+var ball_x_direction=1;
+var ball_y_direction=1;
+
 
 function saveToFile(filename)
 {
@@ -15,13 +18,14 @@ function saveToFile(filename)
 
 function play()
 {
-    document.getElementsByClassName("paddle")[0].left = 0px;
-    document.getElementsByClassName("paddle")[1].left = 490px;
     setInterval('update()',1000);
 }
 
 function update() {
     
     document.getElementsByClassName("paddle")[0].top = player1_x;
+    
+    
+
     
 }
