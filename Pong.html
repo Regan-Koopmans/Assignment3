@@ -6,7 +6,7 @@
 		<link href="pong.css" rel="stylesheet" type="text/css" />
 		<script src="pong.js" type="text/javascript"></script>
 	</head>
-	<body>
+	<body onload="prepare()">
 		
 		<h1>> PONG<span class="cursor">|</span></h1>
 		
@@ -19,28 +19,20 @@
 		</div>
 		<pre>////////////////////////////////////////</pre>
 
-		<!--<div id=board>
-			<div class=score>0</div>
-			<div class=score>0</div>
-            <div id=ball data-angle=0 ></div>
-            <div id=line></div>
-			<div class=paddle></div>
-			<div class=paddle></div>
-		</div> -->
+		
 		
 		<br>
 		<div id="gameWrapper" align="center">
-		<svg id="board" width="400px" height="300px">
-			<text id="player1_score" y="20px" x="70px" fill="#3A943A">:</text>
-			<text id="player2_score" y="20px" x="320" fill="#3A943A">:</text>
-			<rect id="paddle1" width="10px" height="50px" x="0" y="0"/>
-			<rect id="paddle2" width="10px" height="50px" x="390" y="150"/>
-			<line x1="200" y1="0" x2="200" y2="300" stroke-dasharray="5,5"/>
-			<rect x="200" y="150" width="10" height="10"/>
-		</svg>
+		
+		<canvas width="600px" height="300px" id="gameBoard">
+			<script>
+				window.addEventListener('keydown',doKeyDown,true);
+				window.addEventListener('keyup',doKeyUp,true);
+				setInterval(update,16);
+			</script>
+		</canvas>
 		</div>
 	</body>
-	<footer top="0">
-		REgan
+	<footer id="output">
 	</footer>
 </html>

@@ -154,6 +154,11 @@ pre
     
 }
 
+text
+{
+	font-family: monospace;
+}
+
 #gameWrapper
 {
     margin-left:auto;
@@ -165,6 +170,11 @@ pre
 line
 {
     stroke:#3A943A;
+}
+
+svg
+{
+    transform: rotate(45);
 }
 
 rect
