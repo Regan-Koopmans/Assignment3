@@ -14,18 +14,19 @@
       <hr/>
       <br/>
       <div id="loginFormContainer">
-        <form id="loginForm" action="Pong.html" method="post"> 
+        <form id="loginForm" onsubmit=savePlayer2() method="post"> 
           <fieldset>
             <legend>//Player 2 Information</legend>         
           
-            <label> ID : </label>       <input class="login" type="text" name="playerID" autofocus required> <br>
+            <label> ID : </label>       <input class="login" type="text" name="playerID" autofocus required > <br>
             <label> Name : </label>     <input class="login" type="text" name="firstname" required> <br>
             <label> Surname : </label>  <input class="login" type="text" name="surname" required> <br>
             <label> Email : </label>    <input class="login" type="email" name="emailAddress" required> <br>
-            <label> Password : </label> <input class="login" type="password" name="playerPassword" required> <br>
-            <br><br>
+            <label> ID Number :</label> <input class="login" type="text" name="IDNumber" required> <br>
+			<label> Password : </label> <input class="login" type="password" name="playerPassword" required> <br>
+			<br><br>
             
-            <input onclick='savePlayer2()' id="submitButton" type="submit" value="Validate">
+            <input id="submitButton" type="submit" value="Validate">
             
           </fieldset>
         </form>
@@ -34,8 +35,8 @@
       <hr/>
       <br/>     
     
-    <div id="output">
-        
+    <div>
+        <label id="output"></label>
     </div>
     </body>
   <script src="pong.js"></script>

@@ -7,14 +7,14 @@ h1
     color : #3A943A;
     font-family: monospace;
     /*text-shadow: 0.5px 0.5px 5px #3A943A;*/
-    
+
 }
 
 h2
 {
     color : #3A943A;
     font-family: monospace;
-    
+
 }
 
 .cursor
@@ -34,7 +34,7 @@ fieldset
 {
     padding : 20px;
     border-color : #012000;
-    
+
 }
 
 legend
@@ -55,7 +55,7 @@ label
     color : #3A943A;
     font-family: monospace;
     font-size: 15px;
-    
+
 }
 
 .login
@@ -74,10 +74,55 @@ label
     color : black;
 }
 
+table
+{
+  background-color:#3A943A;
+
+}
+
+#border
+{
+  font-size: 10px;
+}
+
+th
+{
+  font-family: monospace;
+}
+
+tr
+{
+  font-family: monospace;
+}
+
+tr:nth-child(even)
+{
+  background-color: #65B565;
+}
+
+a
+{
+  /*background-color: #3A943A;*/
+  color : #3A943A;
+  font-family: monospace;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+th
+{
+  color : #012000;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: monospace;
+}
+
 #output
 {
-    color : #3A943A;
-    margin: auto;
+    color : white;
 }
 
 #playbtn, #leaderbtn
@@ -87,6 +132,7 @@ label
     border: none;
     font-weight: bold;
     font-size: 18px;
+    text-decoration: none;
 }
 
 #playbtn:hover, #leaderbtn:hover
@@ -108,10 +154,10 @@ label
                                         blue 60%,
                                         purple 85%,
                                         red 100%);
-    
+
     color: white;
-    
-    
+
+
 }
 
 .paddle
@@ -124,14 +170,19 @@ label
 
 .ball
 {
-    
+
 }
 
 #board
 {
-    background-color: #012000;
+    background-color: white;
 }
 
+canvas
+{
+	background-color: #044F04;
+  /*box-shadow: 0.5px 0.5px 20px #3A943A;*/
+}
 
 pre
 {
@@ -143,7 +194,7 @@ pre
     font-family: monospace;
     /*background-color: #3A943A;*/
     color: #3A943A;
-    
+
 }
 
 .score
@@ -151,7 +202,7 @@ pre
     color : #3A943A;
     font-size : 20px;
     font-family: monospace;
-    
+
 }
 
 text

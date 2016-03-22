@@ -7,32 +7,30 @@
 		<script src="pong.js" type="text/javascript"></script>
 	</head>
 	<body onload="prepare()">
-		
-		<h1>> PONG<span class="cursor">|</span></h1>
-		
-		<pre>////////////////////////////////////////</pre>
-		<div class=button>
-			
-			// <button id="playbtn" onclick="play()"autofocus>Start</button>
-			<button id="leaderbtn">Go to leaderboards</button> &nbsp;&nbsp;//
-			
-		</div>
-		<pre>////////////////////////////////////////</pre>
 
-		
-		
+		<h1>> PONG<span class="cursor">|</span></h1>
+
+		<pre id="border">////////////////////////////////////////</pre>
+		<div class=button>
+
+			 <button id="playbtn" onclick="play()"autofocus>Start</button>
+			<a class="leaderbtn" id="leaderbtn" href="leaderBoard.php">Go to leaderboards</button>
+
+		</div>
+		<pre id="border">////////////////////////////////////////</pre>
+
+
+
 		<br>
 		<div id="gameWrapper" align="center">
-		
+		<div style="float:left"><label id="player1Score"></label></div>
+		<div style="float:right"><label id="player2Score"></label></div>
 		<canvas width="600px" height="300px" id="gameBoard">
 			<script>
-				window.addEventListener('keydown',doKeyDown,true);
-				window.addEventListener('keyup',doKeyUp,true);
-				setInterval(update,16);
+
 			</script>
 		</canvas>
 		</div>
 	</body>
-	<footer id="output">
-	</footer>
+
 </html>
