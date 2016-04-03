@@ -14,21 +14,21 @@
 		<div class=button>
 
 			 <button id="playbtn" onclick="play()"autofocus>Start</button>
-			<a class="leaderbtn" id="leaderbtn" href="leaderBoard.php">Go to leaderboards</button>
+			<button class="leaderbtn" id="leaderbtn" onclick="postToNextPage()">Go to leaderboards</button>
 
 		</div>
 		<pre id="border">////////////////////////////////////////</pre>
 
-
+		<form id="winnerForm" action="leaderBoard.php" method="post">
+			<input id ="nameInput" type="text" name="user" hidden>
+			<input id="scoreInput" type"number" name="score" hidden>
+		</form>
 
 		<br>
 		<div id="gameWrapper" align="center">
 		<div style="float:left"><label id="player1Score"></label></div>
 		<div style="float:right"><label id="player2Score"></label></div>
 		<canvas width="600px" height="300px" id="gameBoard">
-			<script>
-
-			</script>
 		</canvas>
 		</div>
 	</body>

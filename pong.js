@@ -266,3 +266,23 @@ function doKeyUp(e)
 		player2KeyUp = false;
 	}
 }
+
+function postToNextPage()
+{
+	alert(player1Score + player2Score);
+	var name = document.getElementById("nameInput");
+	var score = document.getElementById("scoreInput");
+	var form = document.getElementById("winnerForm");
+	if (player1Score > player2Score)
+	{
+		name.value = localStorage.getItem("player1");
+		score.value = player1Score;
+	}
+	else if (player2Score > player1Score)
+	{
+		name.value = localStorage.getItem("player2");
+		score.value = player2Score;
+	}
+	alert("submitting");
+	form.submit();
+}
