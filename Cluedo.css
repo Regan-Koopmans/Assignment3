@@ -1,0 +1,58 @@
+#heading
+{
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+	size: 40px;
+	padding-top: 50px;
+	font-family: "Times New Roman", Times, serif
+}
+
+
+
+#subheading
+{
+	color: white;
+	size:10px;
+	font-family: "Times New Roman", Times, serif
+}
+
+body
+{
+	background-color : black;
+}
+
+p
+{
+	text-align:center;
+	color:white;
+}
+
+img
+{
+	padding-top: 50px;
+}
+
+input
+{
+	align:right;
+}
+
+a.question-mark
+{
+	color: red;
+	font-weight: bolder;
+	font-size: 200px;
+	 
+}
+
+label
+{
+	color:white;
+}
+
+#playerDiv
+{
+	
+	padding: 20px;
+}
